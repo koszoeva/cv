@@ -3,23 +3,11 @@
 <head>
     <title>CV – Éva Kószó</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Draco is free PSD &amp; HTML template by @afnizarnur">
-    <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/kube.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/custom.min.css" />
+    <meta name="description" content="CV – Éva Kószó, technical writer and illustrator" />
     <link rel="shortcut icon" href="img/favicon.svg" />
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-	<style>
-		.intro h1:before {
-			content: 'sudo';
-		}
-	</style>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
 	<!-- Navigation -->
@@ -49,23 +37,18 @@
 		<div class="container">
 			<p>Hi, thanks for checking in!</p>
 			<div class="units-row units-split wrap">
-				<div class="unit-20">
-					<img src="img/evi.jpg" alt="Avatar">
-				</div>
 				<div class="unit-80">
 					<h1>I am Éva Kószó<br><span id="typed"></span></h1>
 				</div>
 				<h4>TL;DR</h4>
-				<p>Technical writer and illustrator with 8+ years of experience 
-					turning complex telecom systems into clear, structured documentation. 
-					Skilled in API docs, user manuals, and technical visuals. 
-					Also active beyond my full-time role: contributing to LLM-focused 
-					AI training and prompt QA as a freelance language specialist, 
-					supporting EU project deliverables, and officiating professional snooker.
+				<p>Senior technical writer and illustrator with 9 years of experience turning complex telecom and software systems into clear, usable documentation.
+					Skilled in API docs, user guides, technical visuals, docs-as-code, and AI-assisted workflow improvements.
+					Alongside my full-time role, I contribute to multilingual LLM training and prompt evaluation projects, and officiate professional snooker.
 				</p>
-				<P>
-					<a href="img/file.cv" download></a><a href="cv-evakoszo.pdf", target="new">
-					<i class="fas fa-cloud"></i> Download this CV</a>
+				<p>
+					<a class="download-link" href="cv-evakoszo.pdf" target="_blank">
+						<i class="fas fa-cloud"></i> Download this CV
+					</a>
 				</p>
 			</div>
 		</div>
@@ -77,10 +60,11 @@
 		<h1>Contact</h1>
 		 
    
-		<ul class="award-list list-flat">
-			<p><i class="fas fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;+36 70 360 8842</p>
-			<p><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;koszoeva@yahoo.com</p>
-			<p><i class="fas fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;Budapest, Hungary – willing to relocate ASAP</p>
+		<ul class="award-list list-flat contact-list">
+			<li><i class="fas fa-phone"></i> +36 70 360 8842</li>
+			<li><i class="fas fa-envelope"></i> koszoeva@yahoo.com</li>
+			<li><i class="fas fa-map-marker"></i> Budapest, Hungary – willing to relocate ASAP</li>
+		</ul>
 		</div>
 </div>
 
@@ -248,12 +232,10 @@
 	<!-- Javascript -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/typed.min.js"></script>
-    <script src="js/kube.min.js"></script>
-    <script src="js/site.js"></script>
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["technical writer", "illustrator", "AI linguist"],
+		strings: ["technical writer", "illustrator"],
 
 		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>

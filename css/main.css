@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display+SC:wght@700&display=swap");
+
+/* Clean single stylesheet for the CV page. Replaces kube.css, kube.min.css, custom.css, and custom.min.css. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #333333;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em;
+  color: #333333;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  margin-top: 1.8rem;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+li {
+  text-align: left;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px solid #b3b3b3;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #000000;
+  border-color: #333333;
+}
+
+.container {
+  width: 100%;
+  max-width: 662px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.group::after,
+.units-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list-flat {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* Navigation */
+
+.main-nav {
+  background: #f7f4ff;
+  padding: 23px 0 0;
+}
+
+.navigation-toggle {
+  display: none;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.65em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 0 1em;
+}
+
+.navbar a {
+  display: block;
+  color: #818181;
+  border-bottom: none;
+}
+
+.navbar li.active a,
+.navbar a:hover,
+.navbar a:focus {
+  color: #4d4d4d;
+}
+
+/* Shared sections */
+
+.section.second {
+  margin-bottom: 90px;
+}
+
+.section .container {
+  position: relative;
+}
+
+.section .container::after {
+  position: absolute;
+  left: 20px;
+  content: url("../img/separator.png");
+}
+
+.section .container h1 {
+  position: relative;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* Intro */
+
+.intro {
+  overflow-x: hidden;
+  padding: 95px 0 70px;
+}
+
+.intro .wrap {
+  margin: 30px 0;
+}
+
+.intro img {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: relative;
+}
+
+.intro h1::before {
+  position: absolute;
+  top: -90px;
+  left: -20px;
+  z-index: -1;
+  content: "sudo";
+  color: #f7f4ff;
+  font-size: 230px;
+  line-height: 1;
+}
+
+.intro h1 span {
+  font-size: 47px;
+}
+
+.download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  font-weight: 700;
+}
+
+/* Simple grid replacement for the few Kube classes used by the CV */
+
+.units-row {
+  margin-bottom: 1.65em;
+}
+
+.units-row .unit-20,
+.units-row .unit-50,
+.units-row .unit-80 {
+  float: left;
+}
+
+.units-split .unit-20 {
+  width: 20%;
+}
+
+.units-split .unit-50 {
+  width: 50%;
+}
+
+.units-split .unit-80 {
+  width: 100%;
+}
+
+.units-row:not(.units-split) .unit-50 {
+  width: 48.5%;
+  margin-left: 3%;
+}
+
+.units-row:not(.units-split) .unit-50:first-child {
+  margin-left: 0;
+}
+
+/* Lists */
+
+.work .work-list,
+.award .award-list,
+.skills .skill-list {
+  margin-left: 0;
+}
+
+.work .work-list li,
+.award .award-list li,
+.skills .skill-list li {
+  list-style: none;
+  color: #333333;
+  font-size: 0.9375rem;
+}
+
+.work .work-list li a {
+  padding-bottom: 5px;
+  font-size: 1.1875rem;
+  font-weight: 700;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.contact-list i {
+  width: 1.1rem;
+  text-align: center;
+}
+
+/* Quote */
+
+.quote {
+  margin-top: 120px;
+  padding: 20px 0;
+  background: url("../img/bg.jpg") center / cover;
+}
+
+.quote h1 {
+  margin: 100px 0;
+  padding: 40px 20px;
+  border: 5px solid #ffffff;
+  color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px 0 0;
+}
+
+footer .social {
+  margin: 0;
+  padding: 0;
+}
+
+footer .social li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer .social li a {
+  color: #999999;
+  border-bottom: none;
+  font-size: 1.25rem;
+}
+
+footer .social li a:hover,
+footer .social li a:focus {
+  color: #333333;
+}
+
+/* Typed cursor */
+
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .main-nav {
+    padding: 14px 0;
+  }
+
+  .navbar ul {
+    display: block;
+  }
+
+  .navbar li {
+    margin-bottom: 0.35rem;
+  }
+
+  .intro {
+    padding: 55px 0 50px;
+  }
+
+  .intro img {
+    display: block;
+    margin: 0 auto 1.25rem;
+  }
+
+  .intro h1 {
+    text-align: center;
+  }
+
+  .intro h1::before {
+    top: -92px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 150px;
+  }
+
+  .intro h1 span {
+    font-size: 2rem;
+  }
+
+  .units-row .unit-20,
+  .units-row .unit-50,
+  .units-row .unit-80,
+  .units-split .unit-20,
+  .units-split .unit-50,
+  .units-split .unit-80,
+  .units-row:not(.units-split) .unit-50 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .section.second {
+    margin-bottom: 65px;
+  }
+
+  .quote {
+    margin-top: 80px;
+  }
+
+  .quote h1 {
+    margin: 60px 0;
+    font-size: 1.7rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .right {
+    float: none;
+  }
+
+  footer .social li {
+    margin: 0 10px;
+  }
+}
