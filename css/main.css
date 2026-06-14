@@ -26,7 +26,6 @@ img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -36,6 +35,16 @@ h6 {
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
   line-height: 1.2;
+}
+
+
+h2 {
+  margin: 0 0 0.5em;
+  color: #333333;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  line-height: 1.2;
+    font-size: 1.2rem;
 }
 
 h1 {
