@@ -426,3 +426,11 @@ footer .social li a:focus {
     margin: 0 10px;
   }
 }
+
+/* Employer headings */
+.work .employer-name {
+  text-decoration-line: underline;
+  text-decoration-color: #aa8ee3;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
